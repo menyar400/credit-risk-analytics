@@ -11,17 +11,15 @@ credit-risk-analytics/
 ├── sql/              # All 8 business question queries & KPI computations
 └── docs/             # Insights report (20 pages) + analytical framework (5 pages)
 
-# 8 Business Questions
+# Key Steps
+1- Data cleaning and preprocessing in Python (handling missing values, formatting, and structure correction)
+2- Feature engineering in Python to create meaningful variables for analysis and modeling
+3- Data querying and validation using SQL for structured analysis and checks
+4- Power BI dashboard creation for visualization and business insights
+5- Regression model development to analyze credit risk patterns
 
-#      Question                                           Complexity
-Q1     Loan Grade Distribution & Default Rates            Foundational
-Q2     Default Risk by DTI × Income Level                 Foundational
-Q3     Vintage Analysis & Loan Term Risk                  Intermediate
-Q4     FICO Score, Credit Utilization × Credit Age        Intermediate
-Q5     Loan Size Optimization, Expected Loss & RAR        Intermediate
-Q6     Employment Length & Home Ownership                 Advanced
-Q7     Delinquency, Public Records & Income Verification  Advanced
-Q8     Loan Purpose Risk Anomalies Within Grades          Advanced
+
+# 8 Business Questions are ordered by complexity — from foundational risk validation through interaction effects to profitability optimization — mirroring real-world credit risk workflows used by banks and fintech lenders
 
 # Key Findings
 
