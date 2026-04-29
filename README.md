@@ -1,4 +1,4 @@
-                                                      # Credit Risk Analytics — LendingClub Portfolio 2007–2018 #
+                            Credit Risk Analytics — LendingClub Portfolio 2007–2018 
 A full-stack credit risk analysis project structured around 8 business questions — covering data engineering, SQL analytics, Power BI dashboarding, and predictive modeling.
 
 # Tech Stack :Python MySQL Power BI scikit-learn
