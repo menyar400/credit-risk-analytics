@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score, confusion_matrix, classification_report, RocCurveDisplay
 
-# 1. Load your cleaned dataset
+# 1. Load the cleaned dataset
 df = pd.read_csv('loan_data_cleaned_sample.csv')
 
 # 2. Define Features and Target
@@ -26,7 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
 
-# 4. Feature Scaling (Crucial for Logistic Regression)
+# 4. Feature Scaling
 # This centers data so large numbers (Income) don't drown out small ones (Inquiries)
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
@@ -59,7 +59,7 @@ importance_df = pd.DataFrame({
 print("\n--- Feature Coefficients ---")
 print(importance_df)
 
-# 8. Visualization for your Report: Feature Importance
+# 8. Visualization for the Report: Feature Importance
 plt.figure(figsize=(10, 6))
 sns.barplot(x='Coefficient', y='Feature', data=importance_df, palette='RdYlGn_r')
 plt.title('Predictors of Loan Default (Logistic Regression Coefficients)')
